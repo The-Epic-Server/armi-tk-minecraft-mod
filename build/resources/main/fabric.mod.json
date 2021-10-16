@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "survivalmod",
+  "version": "1.0.0",
+
+  "name": "Survival Mod",
+  "description": "",
+  "authors": [
+    "TKDKid1000"
+  ],
+  "contact": {
+    "homepage": "https://tkdkid1000.net/",
+    "sources": "https://github.com/the-epic-server/"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/survivalmod/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.tkdkid1000.survivalmod.Mod"
+    ]
+  },
+  "mixins": [
+    "survivalmod.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
